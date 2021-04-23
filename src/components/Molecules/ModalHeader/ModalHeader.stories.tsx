@@ -28,8 +28,7 @@ ModalHeaderStory.story = {
 ModalHeaderStory.args = {
     title: "Title",
     onClose: () => {
-        // @ts-ignore
-        console.log("");
+        // do nothing.
     },
 };
 
