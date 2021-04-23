@@ -15,13 +15,11 @@ const meta: Meta = {
     },
 };
 
-export const ModalHeaderStory = (args: any) => {
-    return (
-        <div className="shadow-sm col-xs-12 col-md-6 col-6 px-3 py-3">
-            <ModalHeader {...args} />
-        </div>
-    );
-};
+export const ModalHeaderStory = (args: any) => (
+    <div className="shadow-sm col-xs-12 col-md-6 col-6 px-3 py-3">
+        <ModalHeader {...args} />
+    </div>
+);
 
 ModalHeaderStory.story = {
     name: "ModalHeader",
@@ -29,6 +27,7 @@ ModalHeaderStory.story = {
 
 ModalHeaderStory.args = {
     title: "Title",
+    // @ts-ignore
     onClose: () => {},
 };
 
