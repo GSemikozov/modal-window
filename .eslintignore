@@ -1,0 +1,8 @@
+**/*.d.ts
+webpack.config.js
+rollup.config.js
+src/components/Icons
+src/components/Flags
+svgr.config.js
+svgr-template.js
+scripts/

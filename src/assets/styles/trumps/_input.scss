@@ -1,0 +1,47 @@
+input {
+    &::placeholder {
+        opacity: 1; /* FF fix */
+    }
+}
+
+.form-control {
+    min-height: 32px;
+    line-height: normal;
+
+    &.form-control-sm {
+        min-height: 30px;
+    }
+
+    &:hover {
+        border-color: gray("500");
+    }
+
+    &:focus-within {
+        border-color: blues("500");
+
+        &:hover {
+            border-color: blues("600");
+        }
+    }
+
+    &[readonly],
+    &:disabled,
+    &__disabled {
+        background-color: gray("200");
+        border-color: gray("400");
+
+        &:hover {
+            background-color: gray("200");
+            border-color: gray("400");
+        }
+    }
+
+    &::placeholder {
+        color: gray("600");
+    }
+
+    &:disabled,
+    &__disabled {
+        color: gray("600");
+    }
+}

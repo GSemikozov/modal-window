@@ -1,46 +1,56 @@
-# Getting Started with Create React App
+# Modal UI Package
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Get started
+- Install package `yarn add -E modal-window-package`
+- Add styles from package `~@herman/modal-window-package/src/assets/styles/index` or you can import by module
+- Add react component styles `@import "~@herman/modal-window-package/dist/main.css"` in your scss
 
-## Available Scripts
+## Main commands
+- For develop `yarn start`
+- For build production version `yarn build`
+- For build analytics `yarn build:analyze`
+- For lint `yarn lint`
+- For storybook `yarn storybook`
+- For storybook build `yarn build-storybook`
 
-In the project directory, you can run:
+## How to develop local
+- Run `yarn link`
+- For local build run `yarn start` or `yarn build` in core package directory
+- Go to your project when package installed
+- Run `yarn link @herman/modal-window-package`
+- For unlink you can run `yarn unlink @herman/modal-window-package`
+- `yarn --force` for install package version from npm
+- Add alias to packages in your webpack/rollup or other build tools
+- Link react and react-dom in your package
 
-### `yarn start`
+Storybook: `here will be a link let's say to a netlify demo`
+Confluence: `link to confluence or some other place for public documentation`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## How to use es modules
+- For icons `import Icon from "@herman/modal-window-package/es/Icons/{size}/{iconName}"`. Example:
+````
+import CloseIcon from "@herman/modal-window-package/es/Icons/16/Close"
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<CloseIcon className="text-gray" />
+````
 
-### `yarn test`
+## Available commands
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+`yarn storybook` - run storybook in watch mode
+`yarn lint` - run linter for ts and styles
+`yarn lint:ts` - run linter for the typescript and eslint
+`yarn lint:scss` - run styles linter
+`yarn build-storybook` - build static storybook
+`yarn start` - run build package in the watch mode
+`yarn build` - build package
+`build:es` - build es modules
+`build:icons` - build and optimize all icons
+`build:analyze` - analyze bundle
 
-### `yarn build`
+## License
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```(c)
+Copyright (C) (2021) Herman Semykozov.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+All rights reserved - Do Not Redistribute
+```

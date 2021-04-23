@@ -1,0 +1,242 @@
+// got it from design system palette principles
+
+$blue-100: #f4fafd !default;
+$blue-200: #d1ecfa !default;
+$blue-300: #84cff5 !default;
+$blue-400: #3db8f5 !default;
+$blue-500: #00a5ef !default;
+$blue-600: #0097db !default;
+$blue-700: #0b70d5 !default;
+$blue-900: #454c59 !default;
+
+$blues: (
+    "100": $blue-100,
+    "200": $blue-200,
+    "300": $blue-300,
+    "400": $blue-400,
+    "500": $blue-500,
+    "600": $blue-600,
+    "700": $blue-700,
+    "900": $blue-900,
+) !default;
+
+$purple-100: #f9f7fb !default;
+$purple-200: #eae5f0 !default;
+$purple-300: #d3c7e0 !default;
+$purple-500: #623590 !default;
+$purple-600: #46127b !default;
+
+$purples: (
+    "100": $purple-100,
+    "200": $purple-200,
+    "300": $purple-300,
+    "500": $purple-500,
+    "600": $purple-600,
+) !default;
+
+$green-100: #f3fcf3 !default;
+$green-200: #e9fae5 !default;
+$green-300: #b6f2b2 !default;
+$green-400: #74db70 !default;
+$green-500: #19bf33 !default;
+$green-600: #11ab2a !default;
+$green-800: #008c23 !default;
+
+$greens: (
+    "100": $green-100,
+    "200": $green-200,
+    "300": $green-300,
+    "400": $green-400,
+    "500": $green-500,
+    "600": $green-600,
+    "800": $green-800,
+) !default;
+
+$yellow-100: #fffcf5 !default;
+$yellow-200: #feeecd !default;
+$yellow-400: #fdd587 !default;
+$yellow-500: #ffbe36 !default;
+$yellow-600: #dc9a18 !default;
+$yellow-700: #c68a10 !default;
+$yellow-800: #956911 !default;
+$yellow-900: #5c430a !default;
+
+$yellows: (
+    "100": $yellow-100,
+    "200": $yellow-200,
+    "400": $yellow-400,
+    "500": $yellow-500,
+    "600": $yellow-600,
+    "700": $yellow-700,
+    "800": $yellow-800,
+    "900": $yellow-900,
+) !default;
+
+$red-100: #fff9fa !default;
+$red-200: #fbe4e7 !default;
+$red-300: #f5bcc2 !default;
+$red-400: #e96779 !default;
+$red-500: #e3394d !default;
+$red-600: #d12e41 !default;
+$red-800: #bd2837 !default;
+
+$reds: (
+    "100": $red-100,
+    "200": $red-200,
+    "300": $red-300,
+    "400": $red-400,
+    "500": $red-500,
+    "600": $red-600,
+    "800": $red-800,
+) !default;
+
+$gray-100: #fbfbfb !default;
+$gray-200: #f8f8f8 !default;
+$gray-300: #eeeeee !default;
+$gray-400: #d8d8d8 !default;
+$gray-500: #a9a9a9 !default;
+$gray-600: #848484 !default;
+$gray-700: #626262 !default;
+$gray-800: #494949 !default;
+$gray-900: #333333 !default;
+$gray-950: #121212 !default;
+$gray-e5: #e5e5e5 !default;
+
+$grays: (
+    "100": $gray-100,
+    "200": $gray-200,
+    "300": $gray-300,
+    "400": $gray-400,
+    "500": $gray-500,
+    "600": $gray-600,
+    "700": $gray-700,
+    "800": $gray-800,
+    "900": $gray-900,
+    "950": $gray-950,
+    "e5": $gray-e5,
+) !default;
+
+@function gray($key: "100") {
+    @if map-has-key($grays, $key) {
+        @return map-get($grays, $key);
+    }
+
+    @error "Grays don't have color key: `#{$key}`.";
+}
+
+@function blues($key: "500") {
+    @if map-has-key($blues, $key) {
+        @return map-get($blues, $key);
+    }
+
+    @error "Blues don't have color key: `#{$key}`.";
+}
+
+@function purples($key: "500") {
+    @if map-has-key($purples, $key) {
+        @return map-get($purples, $key);
+    }
+
+    @error "Purples don't have color key: `#{$key}`.";
+}
+
+@function greens($key: "500") {
+    @if map-has-key($greens, $key) {
+        @return map-get($greens, $key);
+    }
+
+    @error "Greens don't have color key: `#{$key}`.";
+}
+
+@function yellows($key: "500") {
+    @if map-has-key($yellows, $key) {
+        @return map-get($yellows, $key);
+    }
+
+    @error "Yellows don't have color key: `#{$key}`.";
+}
+
+@function reds($key: "500") {
+    @if map-has-key($reds, $key) {
+        @return map-get($reds, $key);
+    }
+
+    @error "Reds don't have color key: `#{$key}`.";
+}
+
+@function theme-color($key: "primary") {
+    @if map-has-key($theme-colors, $key) {
+        @return map-get($theme-colors, $key);
+    }
+
+    @error "Theme color don't have color key: `#{$key}`.";
+}
+
+@function create-theme-colors($colors, $name) {
+    $theme-colors: ();
+    @each $number, $color in $colors {
+        $theme-colors: map-merge(
+            $theme-colors,
+            (
+                "#{$name}-#{$number}": $color,
+            )
+        );
+    }
+
+    @return $theme-colors;
+}
+
+@function map-collect($maps...) {
+    $collection: ();
+
+    @each $map in $maps {
+        $collection: map-merge($collection, $map);
+    }
+
+    @return $collection;
+}
+
+$theme-colors: map-collect(
+    create-theme-colors($grays, "gray"),
+    create-theme-colors($blues, "blue"),
+    create-theme-colors($greens, "green"),
+    create-theme-colors($yellows, "yellow"),
+    create-theme-colors($reds, "red"),
+    create-theme-colors($purples, "purple")
+) !default;
+
+$primary: blues("500") !default;
+$secondary: purples("500") !default;
+$success: greens("500") !default;
+$warning: yellows("500") !default;
+$danger: reds("500") !default;
+$light: gray("200") !default;
+$dark: gray("800") !default;
+$link-color: blues("700") !default;
+$white: #ffffff !default;
+$black: #000000 !default;
+$info: #0091ff !default;
+
+$theme-colors: map-merge(
+    (
+        "primary": $primary,
+        "secondary": $secondary,
+        "success": $success,
+        "warning": $warning,
+        "danger": $danger,
+        "info": $info,
+        "light": $light,
+        "dark": $dark,
+        "white": $white,
+        "black": $black,
+        "link-color": $link-color,
+        "transparent": transparent,
+    ),
+    $theme-colors
+);
+
+@function theme-color($key: "primary") {
+    @return map-get($theme-colors, $key);
+}
+
+$body-color: gray("900") !default;

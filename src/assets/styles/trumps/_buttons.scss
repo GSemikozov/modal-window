@@ -1,0 +1,199 @@
+.btn {
+    align-items: center;
+    border: 1px solid gray("400");
+    background-color: theme-color("white");
+    border-radius: $border-radius;
+    color: gray("900");
+    font-size: $btn-font-size;
+    font-weight: $btn-font-weight;
+    line-height: $btn-line-height;
+    min-height: 30px;
+    padding: $btn-padding-y $btn-padding-x;
+    transition: $btn-transition;
+
+    &:hover {
+        background-color: gray("200");
+        color: gray("900");
+    }
+
+    &:focus,
+    &:not(.disabled):active,
+    &.focus {
+        box-shadow: none;
+        outline: none !important;
+    }
+
+    &.active,
+    &:not(.disabled):active {
+        background-color: theme-color("white") !important;
+        border-color: gray("400") !important;
+    }
+
+    //to prevent color change on click on touch screen devices
+    &.btn-outline-primary:not(.active):hover {
+        @media (pointer: coarse) {
+            color: $blue;
+            background-color: initial;
+        }
+    }
+
+    .icon {
+        color: gray("600");
+        height: 16px;
+        min-width: 16px;
+        width: 16px;
+    }
+
+    &.btn-square {
+        padding: $btn-padding-y;
+    }
+
+    .badge {
+        top: auto;
+    }
+}
+
+.btn-lg {
+    padding: $btn-padding-y-lg $btn-padding-x-lg;
+
+    &.btn-square {
+        padding: $btn-padding-y-lg;
+    }
+}
+
+.btn-sm {
+    font-weight: 500;
+    min-height: auto;
+    padding: $btn-padding-y-sm $btn-padding-x-sm;
+
+    &.btn-square {
+        padding: $btn-padding-y-sm;
+    }
+}
+
+$buttonTypes: (
+    primary: blues,
+    secondary: purples,
+    success: greens,
+    danger: reds,
+    warning: yellows,
+);
+
+@each $type, $color in $buttonTypes {
+    .btn-#{$type} {
+        background-color: call(get-function($color), "500");
+        border-color: rgba(gray("900"), 0.15);
+        color: theme-color("white");
+
+        &:hover {
+            background-color: call(get-function($color), "600");
+            color: theme-color("white");
+        }
+
+        &.active,
+        &:not(.disabled):active {
+            background-color: call(get-function($color), "500") !important;
+            border-color: rgba(gray("900"), 0.15) !important;
+        }
+
+        .icon {
+            color: theme-color("white");
+        }
+    }
+    .btn-outline-#{$type} {
+        background-color: theme-color("white");
+        border-color: call(get-function($color), "500") !important;
+        color: gray("900");
+
+        &:hover {
+            background-color: call(get-function($color), "100") !important;
+            border-color: call(get-function($color), "500") !important;
+            color: gray("900") !important;
+        }
+
+        &.active,
+        &:not(.disabled):active {
+            background-color: call(get-function($color), "100") !important;
+            border-color: call(get-function($color), "500") !important;
+            color: gray("900") !important;
+        }
+
+        .icon {
+            color: call(get-function($color), "500");
+        }
+    }
+}
+
+.btn:disabled,
+.btn.disabled {
+    background: gray("200") !important;
+    border-color: gray("400") !important;
+    color: gray("500") !important;
+    opacity: 1;
+    cursor: default;
+}
+
+.btn-link {
+    background: none;
+    border: 0;
+    color: theme-color("link-color");
+    font-weight: 400;
+    min-height: 0;
+    padding: 0;
+
+    &:hover {
+        background: none;
+    }
+
+    &:disabled,
+    &.disabled {
+        background: none !important;
+        color: gray("600") !important;
+    }
+
+    &.active,
+    &:not(.disabled):active {
+        background: none !important;
+        box-shadow: none !important;
+    }
+}
+
+.btn-unstyled {
+    background: none;
+    border: 0;
+    padding: 0;
+    line-height: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+    display: initial;
+    min-height: 0;
+
+    &:disabled,
+    &.disabled {
+        background-color: transparent !important;
+        border-color: transparent !important;
+    }
+
+    &:hover {
+        background: none;
+    }
+
+    &:not(.disabled):active,
+    &:focus {
+        box-shadow: none !important;
+        background-color: transparent !important;
+        border-color: transparent !important;
+    }
+}
+
+.btn-close {
+    @extend .btn-unstyled;
+
+    border: 1px solid transparent;
+    color: gray("600");
+
+    &:hover {
+        color: gray("800");
+    }
+}

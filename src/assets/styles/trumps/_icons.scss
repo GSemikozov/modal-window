@@ -1,0 +1,9 @@
+$iconSizes: 16, 24, 32, 40, 48, 64, 72, 96;
+
+@each $size in $iconSizes {
+    .icon-#{$size} {
+        height: #{$size}px;
+        min-width: #{$size}px;
+        width: #{$size}px;
+    }
+}

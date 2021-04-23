@@ -1,0 +1,20 @@
+import { Meta, IconGallery, IconItem } from "@storybook/addon-docs/blocks";
+
+import * as Icons24 from "@/components/Icons/16";
+
+<Meta title="Icons" />
+
+# Icons
+
+## 16
+
+<IconGallery>
+    {Object.values(Icons24).map((Icon) => (
+         <IconItem name={Icon.displayName.replace("Svg", "")}>
+             <Icon />
+         </IconItem>
+    ))}
+</IconGallery>
+
+
+
