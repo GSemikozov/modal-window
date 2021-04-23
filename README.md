@@ -36,16 +36,16 @@ import CloseIcon from "@herman/modal-window-package/es/Icons/16/Close"
 
 ## Available commands
 
-`yarn storybook` - run storybook in watch mode
-`yarn lint` - run linter for ts and styles
-`yarn lint:ts` - run linter for the typescript and eslint
-`yarn lint:scss` - run styles linter
-`yarn build-storybook` - build static storybook
-`yarn start` - run build package in the watch mode
-`yarn build` - build package
-`build:es` - build es modules
-`build:icons` - build and optimize all icons
-`build:analyze` - analyze bundle
+- `yarn storybook` - run storybook in watch mode
+- `yarn lint` - run linter for ts and styles
+- `yarn lint:ts` - run linter for the typescript and eslint
+- `yarn lint:scss` - run styles linter
+- `yarn build-storybook` - build static storybook
+- `yarn start` - run build package in the watch mode
+- `yarn build` - build package
+- `build:es` - build es modules
+- `build:icons` - build and optimize all icons
+- `build:analyze` - analyze bundle
 
 ## License
 
