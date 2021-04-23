@@ -1,4 +1,4 @@
-# Modal UI Package
+# Modal UI Package (still a draft)
 
 ## Get started
 - Install package `yarn add -E modal-window-package`
