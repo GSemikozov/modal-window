@@ -11,7 +11,7 @@ const meta: Meta = {
 };
 
 export const ModalEditDatastreamStory = ({ title, ...args }: { title: string }) => {
-    return <ModalEditDatastream title={title} {...args} />
+    return <ModalEditDatastream title={title} {...args} />;
 };
 
 ModalEditDatastreamStory.story = {

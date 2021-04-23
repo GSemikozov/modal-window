@@ -4,8 +4,8 @@ import { ModalFooter as ReactstrapModalFooter } from "reactstrap";
 
 import { Meta } from "@storybook/react/types-6-0";
 import { Button } from "@components/Atoms/Button/Button";
-import {Icon} from "@components/Atoms/Icon/Icon";
-import {CopyButton} from "@components/Atoms/CopyButton/CopyButton";
+import { Icon } from "@components/Atoms/Icon/Icon";
+import { CopyButton } from "@components/Atoms/CopyButton/CopyButton";
 
 const meta: Meta = {
     title: "Molecules/ModalFooter",
@@ -39,7 +39,7 @@ export const ModalFooterDefaultStory = (args: any) => {
             </ReactstrapModalFooter>
         </div>
     );
-}
+};
 
 ModalFooterDefaultStory.story = {
     name: "ModalFooterDefault",
@@ -81,7 +81,7 @@ export const ModalFooterWithChildrenStory = (args: any) => {
             </ReactstrapModalFooter>
         </div>
     );
-}
+};
 
 ModalFooterWithChildrenStory.story = {
     name: "ModalFooterWithChildren",

@@ -8,23 +8,14 @@ export type ModalFooterProps = {
     className?: string;
 };
 
-export const ModalFooter = ({
-    startButton,
-    endButton,
-    children,
-    className,
-}: ModalFooterProps) => (
+export const ModalFooter = ({ startButton, endButton, children, className }: ModalFooterProps) => (
     <div
         className={cx("row align-items-center justify-content-between no-gutters w-100", className)}
     >
-        {children && (
-            <div className="col-12 col-sm-auto mb-2 mb-sm-0">{children}</div>
-        )}
+        {children && <div className="col-12 col-sm-auto mb-2 mb-sm-0">{children}</div>}
         <div className="col-12 col-sm-auto ml-auto">
             <div className="d-flex flex-nowrap justify-content-end">
-                {startButton && (
-                    <div className="mr-2">{startButton}</div>
-                )}
+                {startButton && <div className="mr-2">{startButton}</div>}
                 {endButton && <div>{endButton}</div>}
             </div>
         </div>

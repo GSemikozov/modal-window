@@ -1,12 +1,12 @@
 import React, { useCallback, useState } from "react";
 
 import { Modal, ModalComponentsType } from "@components/Organisms/Modal/Modal";
-import {GoogleAdsLogo, ModalFooter, ModalHeader} from "@/components";
+import { GoogleAdsLogo, ModalFooter, ModalHeader } from "@/components";
 import { Button } from "@components/Atoms/Button/Button";
 import { CopyButton } from "@components/Atoms/CopyButton/CopyButton";
 import { Icon } from "@components/Atoms/Icon/Icon";
 import { ModalProps } from "reactstrap/lib/Modal";
-import {Form, FormGroup, Input, Label} from "reactstrap";
+import { Form, FormGroup, Input, Label } from "reactstrap";
 
 export const ModalEditDatastream = ({ title, ...args }: { title: string } & ModalProps) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -56,11 +56,21 @@ export const ModalEditDatastream = ({ title, ...args }: { title: string } & Moda
                     <Form>
                         <FormGroup>
                             <Label for="datastreamTitle">Datastream title</Label>
-                            <Input type="text" name="datastreamTitle" id="datastreamTitle" placeholder="Google Ads report" />
+                            <Input
+                                type="text"
+                                name="datastreamTitle"
+                                id="datastreamTitle"
+                                placeholder="Google Ads report"
+                            />
                         </FormGroup>
                         <FormGroup>
                             <Label for="exampleText">Description</Label>
-                            <Input type="textarea" name="text" id="exampleText" placeholder="Enter your message here" />
+                            <Input
+                                type="textarea"
+                                name="text"
+                                id="exampleText"
+                                placeholder="Enter your message here"
+                            />
                         </FormGroup>
                     </Form>
                 </div>

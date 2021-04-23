@@ -12,11 +12,7 @@ type ModalHeaderProps = {
     onClose?: () => void;
 };
 
-export const ModalHeader = ({
-    title,
-    headerClassnames,
-    onClose,
-}: ModalHeaderProps) => (
+export const ModalHeader = ({ title, headerClassnames, onClose }: ModalHeaderProps) => (
     <div
         className={cx(
             "d-flex justify-content-between w-100 align-items-center rounded",

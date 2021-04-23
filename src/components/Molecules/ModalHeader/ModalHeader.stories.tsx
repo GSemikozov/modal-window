@@ -21,7 +21,7 @@ export const ModalHeaderStory = (args: any) => {
             <ModalHeader {...args} />
         </div>
     );
-}
+};
 
 ModalHeaderStory.story = {
     name: "ModalHeader",

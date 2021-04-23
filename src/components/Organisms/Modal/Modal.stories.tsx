@@ -62,20 +62,19 @@ export const ModalStory = ({ withFooter, withHeading, title, ...args }: ModalPro
     const modalComponents: ModalComponentsType = {
         Footer: withFooter
             ? () => (
-                <ModalFooter
-                    startButton={
-                        <Button size="lg" color="default" block={true} onClick={onToggle}>
-                            Cancel
-                        </Button>
-                    }
-                    endButton={
-
-                        <Button size="lg" color="primary" block={true}>
-                            Apply
-                        </Button>
-                    }
-                />
-            )
+                  <ModalFooter
+                      startButton={
+                          <Button size="lg" color="default" block={true} onClick={onToggle}>
+                              Cancel
+                          </Button>
+                      }
+                      endButton={
+                          <Button size="lg" color="primary" block={true}>
+                              Apply
+                          </Button>
+                      }
+                  />
+              )
             : undefined,
         Header: withHeading
             ? () => <ModalHeader onClose={onToggle} title={title || ""} />
@@ -96,7 +95,7 @@ export const ModalStory = ({ withFooter, withHeading, title, ...args }: ModalPro
             </Modal>
         </>
     );
-}
+};
 
 ModalStory.story = {
     name: "Modal",

@@ -64,9 +64,7 @@ export const Modal = ({
             {...rest}
         >
             {components?.Header && (
-                <div
-                    className="modal-header"
-                >
+                <div className="modal-header">
                     <components.Header />
                 </div>
             )}

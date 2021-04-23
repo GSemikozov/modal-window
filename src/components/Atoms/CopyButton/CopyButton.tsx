@@ -2,7 +2,7 @@ import React, { memo, ReactNode, useCallback } from "react";
 import { useClipboard } from "@hooks/useClipboard";
 
 import { Button, ButtonProps } from "@components/Atoms/Button/Button";
-import {Tooltip} from "reactstrap";
+import { Tooltip } from "reactstrap";
 
 export type CopyButtonProps = {
     text: string;
