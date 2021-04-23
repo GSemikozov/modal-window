@@ -27,8 +27,10 @@ ModalHeaderStory.story = {
 
 ModalHeaderStory.args = {
     title: "Title",
-    // @ts-ignore
-    onClose: () => {},
+    onClose: () => {
+        // @ts-ignore
+        console.log("");
+    },
 };
 
 export default meta;
