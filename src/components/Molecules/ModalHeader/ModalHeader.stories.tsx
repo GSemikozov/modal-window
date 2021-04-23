@@ -29,7 +29,7 @@ ModalHeaderStory.story = {
 
 ModalHeaderStory.args = {
     title: "Title",
-    onClose: () => console.log("close"),
+    onClose: () => {},
 };
 
 export default meta;

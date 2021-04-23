@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Meta } from "@storybook/react/types-6-0";
+
 import { CopyButton, CopyButtonProps } from "./CopyButton";
 
 enum SizeEnum {
@@ -16,8 +18,6 @@ enum CopyButtonColorEnum {
     SECONDARY = "secondary",
     SUCCESS = "success",
 }
-
-import { Meta } from "@storybook/react/types-6-0";
 
 const meta: Meta = {
     title: "Atoms/Button",

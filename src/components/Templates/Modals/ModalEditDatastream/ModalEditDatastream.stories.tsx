@@ -10,9 +10,9 @@ const meta: Meta = {
     component: ModalWindow,
 };
 
-export const ModalEditDatastreamStory = ({ title, ...args }: { title: string }) => {
-    return <ModalEditDatastream title={title} {...args} />;
-};
+export const ModalEditDatastreamStory = ({ title, ...args }: { title: string }) => (
+    <ModalEditDatastream title={title} {...args} />
+);
 
 ModalEditDatastreamStory.story = {
     name: "ModalEditDatastream",

@@ -1,9 +1,6 @@
 import React from "react";
 import cx from "classnames";
 import { Button } from "@components/Atoms/Button/Button";
-
-// import { Label } from "@components/Label/Label";
-import { Label } from "reactstrap";
 import { Close } from "@components/Icons/16";
 
 type ModalHeaderProps = {
