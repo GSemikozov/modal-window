@@ -1,3 +1,10 @@
+## [0.0.6](https://github.com/GSemikozov/modal-window/compare/0.0.5...0.0.6) (2021-04-25)
+
+
+### Bug Fixes
+
+* export Icon ([af642f4](https://github.com/GSemikozov/modal-window/commit/af642f468fbd956c6f8709c16d5fd20eb7740845))
+
 ## [0.0.5](https://github.com/GSemikozov/modal-window/compare/0.0.4...0.0.5) (2021-04-25)
 
 

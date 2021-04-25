@@ -1,6 +1,6 @@
 {
     "name": "@react-frontend-solutions/modal-window-package",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "description": "modal UI component",
     "author": "Herman Semykozov",
     "repository": "https://github.com/GSemikozov/modal-window",
