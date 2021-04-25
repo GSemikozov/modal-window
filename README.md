@@ -1,7 +1,7 @@
-# Modal UI Package (still a draft)
+# Modal UI Package
 
 ## Get started
-- Install package `yarn add -E modal-window-package`
+- Install package `yarn add -E @react-frontend-solutions/modal-window-package`
 - Add styles from package `~@react-frontend-solutions/modal-window-package/src/assets/styles/index` or you can import by module
 - Add react component styles `@import "~@react-frontend-solutions/modal-window-package/dist/main.css"` in your scss
 
@@ -46,6 +46,11 @@ import CloseIcon from "@react-frontend-solutions/modal-window-package/es/Icons/1
 - `build:es` - build es modules
 - `build:icons` - build and optimize all icons
 - `build:analyze` - analyze bundle
+
+## TODO
+- generate README.md automatically and automatically push it to specific place like confluence
+- add CI/CD e.g. travis or inner github tools
+- while releasing publish storybook to the demo
 
 ## License
 
