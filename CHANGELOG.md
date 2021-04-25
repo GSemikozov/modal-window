@@ -1,3 +1,10 @@
+## [0.0.7](https://github.com/GSemikozov/modal-window/compare/0.0.6...0.0.7) (2021-04-25)
+
+
+### Bug Fixes
+
+* path to bootstrap (just for testing) ([aafd51b](https://github.com/GSemikozov/modal-window/commit/aafd51bd5e129aeac648b8e1a52c4929011b13ae))
+
 ## [0.0.6](https://github.com/GSemikozov/modal-window/compare/0.0.5...0.0.6) (2021-04-25)
 
 
