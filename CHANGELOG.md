@@ -1,3 +1,10 @@
+## [0.0.5](https://github.com/GSemikozov/modal-window/compare/0.0.4...0.0.5) (2021-04-25)
+
+
+### Bug Fixes
+
+* export buttons ([72d4448](https://github.com/GSemikozov/modal-window/commit/72d444845c2e3a100ad090cb8fc7a3b902144c51))
+
 ## [0.0.4](https://github.com/GSemikozov/modal-window/compare/0.0.3...0.0.4) (2021-04-25)
 
 ## [0.0.3](https://github.com/GSemikozov/modal-window/compare/0.0.2...0.0.3) (2021-04-25)
