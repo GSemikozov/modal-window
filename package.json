@@ -3,6 +3,10 @@
     "version": "0.0.1",
     "description": "modal UI component",
     "author": "Herman Semykozov",
+    "repository": "https://github.com/GSemikozov/modal-window",
+    "bugs": {
+        "url": "https://github.com/GSemikozov/modal-window/issues"
+    },
     "main": "dist/main.js",
     "module": "dist/main.es.js",
     "moduleMin": "dist/main.min.js",
@@ -13,6 +17,7 @@
         "README.md",
         "src"
     ],
+    "homepage": "https://github.com/GSemikozov/modal-window#readme",
     "husky": {
         "hooks": {
             "pre-push": "yarn lint"
@@ -129,5 +134,10 @@
             "last 1 firefox version",
             "last 1 safari version"
         ]
-    }
+    },
+    "storybook": {
+        "title": "Modal UI component",
+        "url": "https://will-be-placed-somewhere-on-remote-server.com"
+    },
+    "license": "MIT"
 }

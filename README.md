@@ -2,8 +2,8 @@
 
 ## Get started
 - Install package `yarn add -E modal-window-package`
-- Add styles from package `~@herman/modal-window-package/src/assets/styles/index` or you can import by module
-- Add react component styles `@import "~@herman/modal-window-package/dist/main.css"` in your scss
+- Add styles from package `~@react-frontend-solutions/modal-window-package/src/assets/styles/index` or you can import by module
+- Add react component styles `@import "~@react-frontend-solutions/modal-window-package/dist/main.css"` in your scss
 
 ## Main commands
 - For develop `yarn start`
@@ -17,8 +17,8 @@
 - Run `yarn link`
 - For local build run `yarn start` or `yarn build` in core package directory
 - Go to your project when package installed
-- Run `yarn link @herman/modal-window-package`
-- For unlink you can run `yarn unlink @herman/modal-window-package`
+- Run `yarn link @react-frontend-solutions/modal-window-package`
+- For unlink you can run `yarn unlink @react-frontend-solutions/modal-window-package`
 - `yarn --force` for install package version from npm
 - Add alias to packages in your webpack/rollup or other build tools
 - Link react and react-dom in your package
@@ -27,9 +27,9 @@ Storybook: `here will be a link let's say to a netlify demo`
 Confluence: `link to confluence or some other place for public documentation`
 
 ## How to use es modules
-- For icons `import Icon from "@herman/modal-window-package/es/Icons/{size}/{iconName}"`. Example:
+- For icons `import Icon from "@react-frontend-solutions/modal-window-package/es/Icons/{size}/{iconName}"`. Example:
 ````
-import CloseIcon from "@herman/modal-window-package/es/Icons/16/Close"
+import CloseIcon from "@react-frontend-solutions/modal-window-package/es/Icons/16/Close"
 
 <CloseIcon className="text-gray" />
 ````
