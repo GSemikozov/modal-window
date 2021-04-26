@@ -1,3 +1,16 @@
+# [0.1.0](https://github.com/GSemikozov/modal-window/compare/0.0.7...0.1.0) (2021-04-26)
+
+
+### Bug Fixes
+
+* try move back npm-registry option ([0d8220e](https://github.com/GSemikozov/modal-window/commit/0d8220e838f23e512abb7a2dc29c9f94f399ab21))
+* try to use publish command without specifying npm-registry ([dde83c4](https://github.com/GSemikozov/modal-window/commit/dde83c4939004dac53254368d7f4fb2199f4187f))
+
+
+### Features
+
+* add possibility to publish storybook on gh-pages via specific command ([e2cb722](https://github.com/GSemikozov/modal-window/commit/e2cb7224f8156cb9dad95ca555a64767dc23cb48))
+
 ## [0.0.7](https://github.com/GSemikozov/modal-window/compare/0.0.6...0.0.7) (2021-04-25)
 
 
