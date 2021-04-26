@@ -1,7 +1,7 @@
 import React, { useCallback, useState } from "react";
 
 import { Modal, ModalComponentsType } from "@components/Organisms/Modal/Modal";
-import { GoogleAdsLogo, ModalFooter, ModalHeader } from "@/components";
+import { ModalFooter, ModalHeader } from "@/components";
 import { Button } from "@components/Atoms/Button/Button";
 import { CopyButton } from "@components/Atoms/CopyButton/CopyButton";
 import { Icon } from "@components/Atoms/Icon/Icon";
@@ -11,7 +11,7 @@ import { FormGroup } from "@components/Molecules/FormGroup/FormGroup";
 import { ModalProps } from "reactstrap/lib/Modal";
 import { Form } from "reactstrap";
 
-export const ModalEditDatastream = ({ title, ...args }: { title: string } & ModalProps) => {
+export const ModalContactSupport = ({ title, ...args }: { title: string } & ModalProps) => {
     const [isOpen, setIsOpen] = useState(false);
 
     const onToggle = useCallback(() => setIsOpen(!isOpen), [isOpen]);
@@ -29,23 +29,7 @@ export const ModalEditDatastream = ({ title, ...args }: { title: string } & Moda
                         Apply
                     </Button>
                 }
-            >
-                <CopyButton
-                    color="link"
-                    size="sm"
-                    text="https://website.com"
-                    tooltipMessage="Copied!"
-                    tooltipTargetId="lala"
-                    className="mr-2"
-                >
-                    <Icon iconName="Link" className="mr-1" />
-                    Copy link
-                </CopyButton>
-                <Button color="link" href="#" size="sm">
-                    <Icon iconName="Developer" className="mr-1" />
-                    Get embed code
-                </Button>
-            </ModalFooter>
+            />
         ),
         Header: () => <ModalHeader onClose={onToggle} title={title || ""} />,
     };
@@ -55,23 +39,29 @@ export const ModalEditDatastream = ({ title, ...args }: { title: string } & Moda
             <Button onClick={onToggle}>Open modal</Button>
             <Modal isOpen={isOpen} toggle={onToggle} components={modalComponents} {...args}>
                 <div className="d-flex flex-column">
-                    <GoogleAdsLogo className="w-25 align-self-center mb-2" />
                     <Form>
                         <FormGroup className="mb-3">
-                            <FormLabel forId="datastreamTitle" title="datastreamTitle" />
+                            <FormLabel forId="email" title="Email" />
                             <FormInput
                                 type={FormInputTypeEnum.TEXT}
                                 size={FormInputSizeEnum.MEDIUM}
-                                id="datastreamTitle"
-                                placeholder="Google Ads report"
+                                id="email"
+                            />
+                        </FormGroup>
+                        <FormGroup className="mb-3">
+                            <FormLabel forId="subject" title="Subject" />
+                            <FormInput
+                                type={FormInputTypeEnum.TEXT}
+                                size={FormInputSizeEnum.MEDIUM}
+                                id="subject"
                             />
                         </FormGroup>
                         <FormGroup>
-                            <FormLabel forId="Description" title="Description" />
+                            <FormLabel forId="message" title="Message" />
                             <FormInput
                                 type={FormInputTypeEnum.TEXTAREA}
                                 size={FormInputSizeEnum.MEDIUM}
-                                id="Description"
+                                id="message"
                                 placeholder="Enter your message here"
                             />
                         </FormGroup>

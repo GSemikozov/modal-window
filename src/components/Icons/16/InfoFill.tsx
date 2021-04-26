@@ -11,7 +11,7 @@ const SvgInfoFill = (props: React.SVGProps<SVGSVGElement>) => (
     >
         <path
             fillRule="evenodd"
-            d="M2 8a6 6 0 1112 0A6 6 0 012 8zm7-3a1 1 0 11-2 0 1 1 0 012 0zM8 7a1 1 0 00-1 1v3a1 1 0 102 0V8a1 1 0 00-1-1z"
+            d="M8 2a6 6 0 100 12A6 6 0 008 2zM0 8a8 8 0 1116 0A8 8 0 010 8zm9-3a1 1 0 11-2 0 1 1 0 012 0zM8 7a1 1 0 00-1 1v3a1 1 0 102 0V8a1 1 0 00-1-1z"
             clipRule="evenodd"
         />
     </svg>

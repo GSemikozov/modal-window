@@ -1,3 +1,5 @@
+@import "../config/colors";
+
 input {
     &::placeholder {
         opacity: 1; /* FF fix */
@@ -14,14 +16,6 @@ input {
 
     &:hover {
         border-color: gray("500");
-    }
-
-    &:focus-within {
-        border-color: blues("500");
-
-        &:hover {
-            border-color: blues("600");
-        }
     }
 
     &[readonly],
