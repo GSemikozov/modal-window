@@ -1,3 +1,16 @@
+# [0.3.0](https://github.com/GSemikozov/modal-window/compare/0.1.0...0.3.0) (2021-04-26)
+
+
+### Bug Fixes
+
+* format files according to codestyle ([6a822a5](https://github.com/GSemikozov/modal-window/commit/6a822a5500b8bad0cecac2975961fb2c0fbbef70))
+* readme ([efd50d3](https://github.com/GSemikozov/modal-window/commit/efd50d3ab696306e06ab220d41d6481affb011df))
+
+
+### Features
+
+* add new templates and components, update docs, fix build ([230fc6a](https://github.com/GSemikozov/modal-window/commit/230fc6a204c9966acc07c714cb6284fb455b9a2a))
+
 # [0.1.0](https://github.com/GSemikozov/modal-window/compare/0.0.7...0.1.0) (2021-04-26)
 
 
