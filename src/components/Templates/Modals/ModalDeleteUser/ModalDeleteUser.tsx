@@ -3,7 +3,6 @@ import React, { useCallback, useState } from "react";
 import { Modal, ModalComponentsType } from "@components/Organisms/Modal/Modal";
 import { ModalFooter, ModalHeader } from "@/components";
 import { Button } from "@components/Atoms/Button/Button";
-import { CopyButton } from "@components/Atoms/CopyButton/CopyButton";
 import { Icon } from "@components/Atoms/Icon/Icon";
 import { ModalProps } from "reactstrap/lib/Modal";
 

@@ -1,5 +1,5 @@
-import React, { HtmlHTMLAttributes, ReactNode, ReactType } from "react";
-import { FormGroup as ReactstrapFormGroup, CSSModule } from "reactstrap";
+import React, { HtmlHTMLAttributes, ReactNode } from "react";
+import { FormGroup as ReactstrapFormGroup } from "reactstrap";
 
 export type FormGroupProps = {
     children: ReactNode;

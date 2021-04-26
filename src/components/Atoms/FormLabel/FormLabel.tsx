@@ -1,5 +1,4 @@
-import React, { memo, ReactNode, useMemo } from "react";
-import cx from "classnames";
+import React from "react";
 
 import { Label as LabelReactstrap } from "reactstrap";
 import { InputBaseProps } from "@type/InputBaseType";
@@ -10,10 +9,8 @@ export type FormInputProps = {
     className?: string;
 } & Omit<InputBaseProps>;
 
-export const FormLabel = ({
-    title,
-    forId,
-    className,
-}: FormInputProps) => (
-    <LabelReactstrap for={forId} className={className}>{title}</LabelReactstrap>
+export const FormLabel = ({ title, forId, className }: FormInputProps) => (
+    <LabelReactstrap for={forId} className={className}>
+        {title}
+    </LabelReactstrap>
 );

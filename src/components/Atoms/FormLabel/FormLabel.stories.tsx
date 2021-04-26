@@ -40,6 +40,6 @@ FormLabelStory.args = {
     title: "Form label",
     forId: "",
     className: "",
-}
+};
 
 export default meta;

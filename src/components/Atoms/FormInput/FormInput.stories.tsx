@@ -49,6 +49,6 @@ FormInputStory.args = {
     name: "inputText",
     placeholder: "Placeholder",
     readOnly: false,
-}
+};
 
 export default meta;

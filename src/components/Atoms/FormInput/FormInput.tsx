@@ -1,4 +1,4 @@
-import React, { memo, ReactNode, useMemo } from "react";
+import React, { memo, useMemo } from "react";
 import cx from "classnames";
 
 import { Input as InputReactstrap } from "reactstrap";

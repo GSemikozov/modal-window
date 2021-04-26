@@ -3,7 +3,6 @@ import React, { useCallback, useState } from "react";
 import { Modal, ModalComponentsType } from "@components/Organisms/Modal/Modal";
 import { ModalFooter, ModalHeader } from "@/components";
 import { Button } from "@components/Atoms/Button/Button";
-import { CopyButton } from "@components/Atoms/CopyButton/CopyButton";
 import { Icon } from "@components/Atoms/Icon/Icon";
 import { ModalProps } from "reactstrap/lib/Modal";
 
@@ -35,8 +34,15 @@ export const ModalApplyChanges = ({ title, ...args }: { title: string } & ModalP
             <Button onClick={onToggle}>Open modal</Button>
             <Modal isOpen={isOpen} toggle={onToggle} components={modalComponents} {...args}>
                 <div className="d-flex flex-row">
-                    <Icon className="text-primary mr-2 mt-1" style={{width: "24px"}} iconName="InfoFill" />
-                    <p>This will overwrite all visualizations on connected dashboard widgets. This action cannot be undone.</p>
+                    <Icon
+                        className="text-primary mr-2 mt-1"
+                        style={{ width: "24px" }}
+                        iconName="InfoFill"
+                    />
+                    <p>
+                        This will overwrite all visualizations on connected dashboard widgets. This
+                        action cannot be undone.
+                    </p>
                 </div>
             </Modal>
         </>

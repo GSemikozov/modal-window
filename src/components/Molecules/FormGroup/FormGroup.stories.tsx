@@ -2,8 +2,14 @@ import React from "react";
 
 import { Meta } from "@storybook/react/types-6-0";
 
-import { FormInput, FormInputSizeEnum, FormInputTypeEnum } from "@components/Atoms/FormInput/FormInput";
+import {
+    FormInput,
+    FormInputSizeEnum,
+    FormInputTypeEnum,
+} from "@components/Atoms/FormInput/FormInput";
+
 import { FormLabel } from "@components/Atoms/FormLabel/FormLabel";
+
 import { FormGroup } from "./FormGroup";
 
 const meta: Meta = {

@@ -3,9 +3,11 @@ import React, { useCallback, useState } from "react";
 import { Modal, ModalComponentsType } from "@components/Organisms/Modal/Modal";
 import { ModalFooter, ModalHeader } from "@/components";
 import { Button } from "@components/Atoms/Button/Button";
-import { CopyButton } from "@components/Atoms/CopyButton/CopyButton";
-import { Icon } from "@components/Atoms/Icon/Icon";
-import { FormInput, FormInputTypeEnum, FormInputSizeEnum } from "@components/Atoms/FormInput/FormInput";
+import {
+    FormInput,
+    FormInputTypeEnum,
+    FormInputSizeEnum,
+} from "@components/Atoms/FormInput/FormInput";
 import { FormLabel } from "@components/Atoms/FormLabel/FormLabel";
 import { FormGroup } from "@components/Molecules/FormGroup/FormGroup";
 import { ModalProps } from "reactstrap/lib/Modal";
