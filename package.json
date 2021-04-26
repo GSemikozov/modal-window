@@ -146,7 +146,8 @@
         "url": "https://will-be-placed-somewhere-on-remote-server.com"
     },
     "publishConfig": {
-        "access": "public"
+        "access": "public",
+        "registry": "https://registry.npmjs.org/"
     },
     "release-it": {
         "github": {
