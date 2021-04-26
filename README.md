@@ -1,6 +1,6 @@
 # Modal UI Package
-[storybook on gh-pages](https://GSemikozov.github.io/modal-window/)
-[npm package link](https://www.npmjs.com/package/@react-frontend-solutions/modal-window-package)
+- [storybook on gh-pages](https://GSemikozov.github.io/modal-window/)
+- [npm package link](https://www.npmjs.com/package/@react-frontend-solutions/modal-window-package)
 
 ## Get started
 - Install package `yarn add -E @react-frontend-solutions/modal-window-package`
