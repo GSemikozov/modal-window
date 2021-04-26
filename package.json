@@ -54,6 +54,7 @@
         "@storybook/addon-viewport": "^6.0.21",
         "@storybook/react": "^6.0.21",
         "@storybook/source-loader": "^6.0.21",
+        "@storybook/storybook-deployer": "^2.8.7",
         "@testing-library/jest-dom": "^4.2.4",
         "@testing-library/react": "^9.3.2",
         "@testing-library/user-event": "^7.1.2",
@@ -124,6 +125,7 @@
         "build:monochrome-icons": "svgr --typescript src/assets/icons/monochrome -d ./src/components/Icons --template ./svgr-template",
         "storybook": "start-storybook -p 9001 -c .storybook",
         "build-storybook": "build-storybook -c .storybook -o storybook-build -s ./public",
+        "deploy-storybook": "storybook-to-ghpages",
         "test": "NODE_ENV=test jest ./src",
         "release": "dotenv release-it"
     },
